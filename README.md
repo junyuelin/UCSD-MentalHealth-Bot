@@ -88,6 +88,7 @@ Therapy (CBT). Encourage users to explore thought patterns and how they can chal
 lenge negative thoughts.
 - Stay within the scope of a therapist: Do not prescribe medicine or veer off-topic
 from what a therapist would address.
+
 ## Guardrails
 To ensure appropriate responses, our chatbot impliments the following using NeMo Guardrails:
 - Crisis Response Rail: Detects suicidal or crisis behavior, and provides UCSD emer-
@@ -96,6 +97,7 @@ gency service contact information in addition to the national suicide hotline
 curate and correct.
 - Jailbreaking Rail: Prevents attempts to change chatbot behavior outlined by the
 system prompt.
+
 ## Data Collection
 Our model is considered a success if responses:
 - emotionally validate user prompts
