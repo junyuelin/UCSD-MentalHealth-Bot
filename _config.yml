@@ -1,3 +1,5 @@
 remote_theme: pages-themes/cayman@v0.2.0  #@v3.1.0 hyde #
+description: "Junyue Lin (jul121@ucsd.edu) Vi Truong (a8truong@ucsd.edu) Serena Xie (scxie@ucsd.edu) Housheng Hai (hhai@ucsd.edu)"
+
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
