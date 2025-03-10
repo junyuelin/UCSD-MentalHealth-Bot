@@ -55,9 +55,12 @@ new model.
 
 # Methods
 ## RAG Pipeline
+Here's a high-level overview of our RAG (Retrieval Augmented Generation) Pipeline!
 To tailor our Chatbot to UCSD mental health service-specific information, we created and collected PDFs of UCSD mental 
-health service-related information. When a user asks our chatbot something, our model retrieves relevant information
-from these PDF documents to provide more context and generate responses that are more tailored to UCSD mental health services.
+health service-related information, transformed it, and stored that transformed data a special database. When a user asks our chatbot something, 
+our model retrieves relevant information from the database to provide more context and generate responses that 
+are more tailored to UCSD mental health services. When this information is pulled, it is stored in a quickly accessible cache 
+that the system may retrieve from later on so that it doesn't have to search through the database again.
 <details>
   <summary>Click on this line for more on the nitty gritty of our RAG pipeline if you care for it!</summary>
   Our RAG pipeline is trained on mental health service-related data collected from PDFs (processed 
@@ -122,8 +125,23 @@ ered a success, otherwise it is a fail.
 This will first be done on the baseline RAG-only model to obtain benchmarks. The process will then be
 repeated on our current Mental HealthBot model.
 </details>
-## Results
+## Results and Conclusion
+Our Mental HealthBot model performed better than our baseline model across all success criteria!
+![This is a bar chart of our MentalHealthBot performance against our baseline model performance](baseline_bot_comparison.png)
+
+Surprisingly enough, even though our model had more things (namely guardrails) added on top of the baseline model, it also performed faster overall!
+
+**Baseline vs Mental HealthBot Response Time (Seconds)**
+
+| Metric             | Baseline | Mental HealthBot | Speed Increase (%) |
+|--------------------|----------|------------------|--------------------|
+| Average  | 3.625233 | 2.835641         | 21.78      |
+
+Additionally, implementing a cache decreased retrieval time by 97.47% which significantly sped up our chatbot:
+
+**RAG vs Cache Retrieval Time (Seconds)**
+|   Metric |    RAG |   Cache |   Speed Increase (%) |
+|:--------|-------:|--------:|---------------------:|
+| Average| 2.6831 |   0.068 |                97.47 |
 
 
-
-## Conclusion
