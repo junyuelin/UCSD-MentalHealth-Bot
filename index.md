@@ -53,9 +53,14 @@ to on-campus and national suicide hotlines
 The vanilla control model will be used to determine benchmarks that we compare with our
 new model.
 
-# Method 
+# Methods
 ## RAG Pipeline
-Our RAG pipeline is trained on mental health service-related data collected from PDFs (pro-
+To tailor our Chatbot to UCSD mental health service-specific information, we created and collected PDFs of UCSD mental 
+health service-related information. When a user asks our chatbot something, our model retrieves relevant information
+from these PDF documents to provide more context and generate responses that are more tailored to UCSD mental health services.
+<details>
+  <summary> Click here for more on the nitty gritty of our RAG pipeline if you care for it.</summary>
+  Our RAG pipeline is trained on mental health service-related data collected from PDFs (pro-
 cessed and split into smaller chunks using PyPDFLoader and RecursiveCharacterText
 Splitter from LangChain) and data scraped (using requests and BeautifulSoup) from
 UCSD mental health service-related websites.
@@ -66,9 +71,12 @@ index (IndexFlatL2) that enables efficient nearest-neighbor searches. When a use
 is received, its embedding is computed and searched against the FAISS index to find the
 most relevant documents. Relevant documents from FAISS are retrieved and passed as
 context to GPT-3.5 turbo.
+</details>
+![This is a diagram of our RAG pipeline](rag_cache_diagram.png)
+
 ## System Prompt
-To ensure the model provides friendly mental health-conscious responses, the response is
-dictated by a prompt template specifying that responses should:
+To ensure the model provides friendly mental health-conscious responses, the responses are made
+to do the following:
 - Use active listening skills: Listen attentively and ask open-ended questions to en-
 courage users to share more about their feelings and experiences.
 - Gather information: When a user shares something important, ask follow-up ques-
@@ -81,15 +89,13 @@ feelings are valid and common.
 to show that you’re listening and to help them process their thoughts.
 - Help with problem-solving: Instead of telling users what to do, guide them through
 the process of thinking about their challenges and possible solutions.
-- Facilitate helpful thought patterns: When users mention feeling depressed or anx-
-ious, offer guidance based on therapeutic methods such as Cognitive Behavioral
-Therapy (CBT). Encourage users to explore thought patterns and how they can chal-
-lenge negative thoughts.
+- Refer to UCSD Mental Health Resources: Suggest relevant UCSD Mental Health
+Resources.
 - Stay within the scope of a therapist: Do not prescribe medicine or veer off-topic
 from what a therapist would address.
 
 ## Guardrails
-To ensure appropriate responses, our chatbot impliments the following using NeMo Guardrails:
+To ensure appropriate responses, our chatbot uses NeMo Guardrails to create the following:
 - Crisis Response Rail: Detects suicidal or crisis behavior, and provides UCSD emer-
 gency service contact information in addition to the national suicide hotline
 - Fact Checking Rail: Ensures UCSD mental health service-related information is ac-
@@ -113,3 +119,7 @@ ered a success, otherwise it is a fail.
 3. Calculate the accuracy, false positives, and false negatives.
 This will first be done on the vanilla model to obtain benchmarks. The process will then be
 repeated on our current chatbot model.
+
+## Results
+
+## Conclusion
