@@ -122,7 +122,7 @@ We consider our model success if it:
 <details>
   <summary>Click this line for more details on how we tested our model!</summary>
 <br>  
-To test these, conduct the following steps on a baseline GPT-3.5 turbo model with RAG implemented: <br><br>  
+To test these, conduct the following steps on a baseline GPT-3.5 turbo model with RAG implemented: <br>
   
 1. For each bullet point listed above, test 5 different prompts tailored to that specific
 bullet point. Given the stochastic nature of LLMs, data should be collected for each
