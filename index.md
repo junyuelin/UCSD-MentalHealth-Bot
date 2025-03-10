@@ -59,18 +59,18 @@ To tailor our Chatbot to UCSD mental health service-specific information, we cre
 health service-related information. When a user asks our chatbot something, our model retrieves relevant information
 from these PDF documents to provide more context and generate responses that are more tailored to UCSD mental health services.
 <details>
-  <summary> Click here for more on the nitty gritty of our RAG pipeline if you care for it.</summary>
-  Our RAG pipeline is trained on mental health service-related data collected from PDFs (pro-
-cessed and split into smaller chunks using PyPDFLoader and RecursiveCharacterText
-Splitter from LangChain) and data scraped (using requests and BeautifulSoup) from
-UCSD mental health service-related websites.
-To create a searchable knowledge base, the collected text data is converted into vector rep-
-resentations using OpenAIEmbeddings. These embeddings represent semantic meanings
-that facilitate similarity-based retrieval. The generated embeddings are stored in a FAISS
-index (IndexFlatL2) that enables efficient nearest-neighbor searches. When a user query
-is received, its embedding is computed and searched against the FAISS index to find the
-most relevant documents. Relevant documents from FAISS are retrieved and passed as
-context to GPT-3.5 turbo.
+  <summary>Click on this line for more on the nitty gritty of our RAG pipeline if you care for it!</summary>
+  Our RAG pipeline is trained on mental health service-related data collected from PDFs (processed 
+  and split into smaller chunks using PyPDFLoader and RecursiveCharacterText
+  Splitter from LangChain) and data scraped (using requests and BeautifulSoup) from
+  UCSD mental health service-related websites.
+  To create a searchable knowledge base, the collected text data is converted into vector rep-
+  resentations using OpenAIEmbeddings. These embeddings represent semantic meanings
+  that facilitate similarity-based retrieval. The generated embeddings are stored in a FAISS
+  index (IndexFlatL2) that enables efficient nearest-neighbor searches. When a user query
+  is received, its embedding is computed and searched against the FAISS index to find the
+  most relevant documents. Relevant documents from FAISS are retrieved and passed as
+  context to GPT-3.5 turbo.
 </details>
 ![This is a diagram of our RAG pipeline](rag_cache_diagram.png)
 
@@ -102,24 +102,28 @@ gency service contact information in addition to the national suicide hotline
 curate and correct.
 - Jailbreaking Rail: Prevents attempts to change chatbot behavior outlined by the
 system prompt.
+![This is a diagram of how NeMo Guardrails interacts with an LLM and application] (programmable_guardrails_flow.png)
 
 ## Data Collection
-Our model is considered a success if responses:
-- emotionally validate user prompts
-- accurately direct users to UCSD mental health resources
-- identify crisis behavior and redirect to both on-campus and national hotlines
-- resist jailbreaking attempts
-To test these, conduct the following steps on a vanilla GPT-3.5 turbo model with no RAG
-or additional guardrails implemented:
+We consider our model success if it:
+- emotionally validates user prompts without dictating
+- accurately directs users to UCSD mental health resources
+- identifies crisis behavior and redirect to both on-campus and national hotlines
+- resists jailbreaking attempts
+<details>
+  <summary>Click this line for more details on how we tested our model!</summary>
+To test these, conduct the following steps on a baseline GPT-3.5 turbo model with RAG implemented:
 1. For each bullet point listed above, test 5 different prompts tailored to that specific
 bullet point. Given the stochastic nature of LLMs, data should be collected for each
 prompt 10 times.
 2. If the chatbot response does what is intended for the tested bullet point, it is consid-
 ered a success, otherwise it is a fail.
 3. Calculate the accuracy, false positives, and false negatives.
-This will first be done on the vanilla model to obtain benchmarks. The process will then be
-repeated on our current chatbot model.
-
+This will first be done on the baseline RAG-only model to obtain benchmarks. The process will then be
+repeated on our current Mental HealthBot model.
+</details>
 ## Results
+
+
 
 ## Conclusion
