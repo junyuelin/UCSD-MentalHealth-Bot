@@ -1,6 +1,6 @@
 remote_theme: pages-themes/cayman@v0.2.0  #@v3.1.0 hyde #
 title: "UCSD Mental Health Bot"
-description: "Junyue Lin (jul121@ucsd.edu) Vi Truong (a8truong@ucsd.edu) <br> Serena Xie (scxie@ucsd.edu) Housheng Hai (hhai@ucsd.edu)"
+description: "Junyue Lin (jul121@ucsd.edu), Vi Truong (a8truong@ucsd.edu), <br> Serena Xie (scxie@ucsd.edu), Housheng Hai (hhai@ucsd.edu) <br> Mentors: Nimu Sidhu (nimsidhu@deloitte.com) and Abed El Husseini (aelhusseini@deloitte.com)"
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
