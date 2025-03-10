@@ -184,19 +184,19 @@ If you would like to try out our chatbot, here's a link to our [github repo!](ht
 [^1]: He, Y., L. Yang, X. Zhu, B. Wu, S. Zhang, C. Qian, and T. Tian. 2022.  
 “Mental Health Chatbot for Young Adults With Depressive Symptoms During the COVID-19 Pandemic:  
 Single-Blind, Three-Arm Randomized Controlled Trial.”  
-*J Med Internet Res* 24(11), p. e40719. [Available here](<insert-link-here>).
+*J Med Internet Res* 24(11), p. e40719. [Available here](https://pubmed.ncbi.nlm.nih.gov/36355633/).
 
 [^2]: Vereschagin, M., A. Wang, C. Richardson, H. Xie, R. Munthali, K. Hudec, C. Leung,  
 K. Wojcik, L. Munro, P. Halli, R. Kessler, and D. Vigo. 2024.  
 “Effectiveness of the Minder Mobile Mental Health and Substance Use Intervention for University Students:  
 Randomized Controlled Trial.”  
-*J Med Internet Res* 26, p. e54287. [Available here](<insert-link-here>).
+*J Med Internet Res* 26, p. e54287. [Available here](https://pubmed.ncbi.nlm.nih.gov/38536225/).
 
 [^3]: Casu, M., S. Triscari, S. Battiato, L. Guarnera, and P. Caponnetto. 2024.  
 “AI Chatbots for Mental Health: A Scoping Review of Effectiveness, Feasibility, and Applications.”  
-*Applied Sciences* 14(13), p. 5889. [Available here](<insert-link-here>).
+*Applied Sciences* 14(13), p. 5889. [Available here](https://www.mdpi.com/2076-3417/14/13/5889).
 
 [^4]: Neupane, Subash, Elias Hossain, Jason Keith, Himanshu Tripathi, Farbod Ghiasi,  
 Noorbakhsh Amiri Golilarz, Amin Amirlatifi, Sudip Mittal, and Shahram Rahimi. 2024.  
 “From Questions to Insightful Answers: Building an Informed Chatbot for University Resources.”  
-[Available here](<insert-link-here>).
+[Available here](https://arxiv.org/abs/2405.08120)
