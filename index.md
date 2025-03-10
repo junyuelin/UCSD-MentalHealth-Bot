@@ -145,7 +145,9 @@ our model had more things (namely guardrails) added on top of the baseline model
 
 
 Additionally, we can see from the table below that implementing a cache decreased retrieval time by 97.47%, significantly speeding up response times:
+
 **RAG vs Cache Retrieval Time (Seconds)**
+
 |   Metric |    RAG |   Cache |   Speed Increase (%) |
 |:--------|-------:|--------:|---------------------:|
 | Average| 2.6831 |   0.068 |                97.47 |
