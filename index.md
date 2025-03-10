@@ -17,30 +17,36 @@ Generation (RAG). Additionally, guardrails are implemented to prevent hal-
 lucinations and detect emergency crisis behavior among users.
 
 # Introduction
-Mental health is a growing concern among university students balancing academic, social, 
-and personal challenges. While mental health-related GenAI applications have gained
-traction, they are largely catered to the general population and are susceptible to hallucinations. 
-They lack any knowledge on campus-specific information relevant to the average
-UCSD student. As a result, this project aims to develop a chatbot tailored to UCSD students
-that can direct them to the numerous mental health services on campus when needed.
-A variety of AI mental health chatbots are shown to have improved mental health through
-digital therapy. One study on the cognitive behavioral therapy (CBT)-based mental health
-chatbot, XiaoE, found that it significantly reduced depressive symptoms in young adults
-compared to their control group (He et al. 2022). Another mental health chatbot, Minder,
-was co-developed with university students and also found effective in reducing depression
-and anxiety symptoms while also decreasing substance use among a general sample of
-university students (Vereschagin et al. 2024). Additionally, a scoping review done on the
-efficacy and feasibility of 15 different studies on AI mental health chatbots concludes that
-tailoring chatbot interventions to specific populations can enhance their efficacy (Casu et al.
-2024).
-Outside the mental health space, a study on a chatbot trained on campus-specific resources
-at Mississippi State University highlights the potential AI-based chat systems have on facilitating 
-access to university resources (Neupane et al. 2024). Willo, the current AI wellness based app tailored 
-to UCSD students, provides lists of relevant campus resources based on user-selected data. However, 
-it lacks any other form of user interaction and in-app mental health support. Our chatbot addresses this
-gap by incorporating a mental health conscious persona that can support users in non-crisis situations
-while also promoting on-campus mental-health resources. To test the efficacy of our chatbot, we compare 
-its responses with a control GPT-3.5 turbo model on the following criteria:
+
+Mental health is a growing concern among university students balancing academic, 
+social, and personal challenges. While mental health-related GenAI applications 
+have gained traction, they are largely catered to the general population and are 
+susceptible to hallucinations. They lack any knowledge on campus-specific 
+information relevant to the average UCSD student. As a result, this project aims 
+to develop a chatbot tailored to UCSD students that can direct them to the numerous 
+mental health services on campus when needed. 
+
+A variety of AI mental health chatbots are shown to have improved mental health 
+through digital therapy. One study on the cognitive behavioral therapy (CBT)-based 
+mental health chatbot, XiaoE, found that it significantly reduced depressive 
+symptoms in young adults compared to their control group [^1]. Another mental 
+health chatbot, Minder, was co-developed with university students and also found 
+effective in reducing depression and anxiety symptoms while also decreasing 
+substance use among a general sample of university students [^2]. Additionally, 
+a scoping review done on the efficacy and feasibility of 15 different studies on 
+AI mental health chatbots concludes that tailoring chatbot interventions to specific 
+populations can enhance their efficacy [^3]. 
+
+Outside the mental health space, a study on a chatbot trained on campus-specific 
+resources at Mississippi State University highlights the potential AI-based chat 
+systems have on facilitating access to university resources [^4]. 
+
+Willo, the current AI wellness based app tailored to UCSD students, provides lists of 
+relevant campus resources based on user-selected data. However, it lacks any other form
+of user interaction and in-app mental health support. Our chatbot addresses this gap by 
+incorporating a mental health conscious persona that can support users in non-crisis situations
+while also promoting on-campus mental-health resources. To test the efficacy of our chatbot, 
+we compare its responses with a control GPT-3.5 turbo model on the following criteria:
 - Whether or not responses to emotionally charged user prompts normalize and affirm
 their feelings
 - Whether or not responses accurately provide information to UCSD mental health
@@ -175,24 +181,22 @@ If you would like to try out our chatbot, here's a link to our [github repo!](ht
 
 # References
 
-Casu, M., S. Triscari, S. Battiato, L. Guarnera, and P. Caponnetto. 2024.  
-“AI Chatbots for Mental Health: A Scoping Review of Effectiveness, Feasibility, and Applications.”  
-*Applied Sciences* 14(13), p. 5889. [Available here](<insert-link-here>).
-
-He, Y., L. Yang, X. Zhu, B. Wu, S. Zhang, C. Qian, and T. Tian. 2022.  
+[^1]: He, Y., L. Yang, X. Zhu, B. Wu, S. Zhang, C. Qian, and T. Tian. 2022.  
 “Mental Health Chatbot for Young Adults With Depressive Symptoms During the COVID-19 Pandemic:  
 Single-Blind, Three-Arm Randomized Controlled Trial.”  
 *J Med Internet Res* 24(11), p. e40719. [Available here](<insert-link-here>).
 
-Neupane, Subash, Elias Hossain, Jason Keith, Himanshu Tripathi, Farbod Ghiasi,  
-Noorbakhsh Amiri Golilarz, Amin Amirlatifi, Sudip Mittal, and Shahram Rahimi. 2024.  
-“From Questions to Insightful Answers: Building an Informed Chatbot for University Resources.”  
-[Available here](<insert-link-here>).
-
-Vereschagin, M., A. Wang, C. Richardson, H. Xie, R. Munthali, K. Hudec, C. Leung,  
+[^2]: Vereschagin, M., A. Wang, C. Richardson, H. Xie, R. Munthali, K. Hudec, C. Leung,  
 K. Wojcik, L. Munro, P. Halli, R. Kessler, and D. Vigo. 2024.  
 “Effectiveness of the Minder Mobile Mental Health and Substance Use Intervention for University Students:  
 Randomized Controlled Trial.”  
 *J Med Internet Res* 26, p. e54287. [Available here](<insert-link-here>).
 
+[^3]: Casu, M., S. Triscari, S. Battiato, L. Guarnera, and P. Caponnetto. 2024.  
+“AI Chatbots for Mental Health: A Scoping Review of Effectiveness, Feasibility, and Applications.”  
+*Applied Sciences* 14(13), p. 5889. [Available here](<insert-link-here>).
 
+[^4]: Neupane, Subash, Elias Hossain, Jason Keith, Himanshu Tripathi, Farbod Ghiasi,  
+Noorbakhsh Amiri Golilarz, Amin Amirlatifi, Sudip Mittal, and Shahram Rahimi. 2024.  
+“From Questions to Insightful Answers: Building an Informed Chatbot for University Resources.”  
+[Available here](<insert-link-here>).
