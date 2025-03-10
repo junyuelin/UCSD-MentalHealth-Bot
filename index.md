@@ -1,3 +1,7 @@
+---
+layout: default
+title: 
+---
 
 # About
 Given the academic rigor and stress associated with college life, there is a
