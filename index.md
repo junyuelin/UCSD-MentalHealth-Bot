@@ -1,8 +1,4 @@
----
-layout: default
-title: 
----
-
+# UCSD Mental Health Bot
 # About
 Given the academic rigor and stress associated with college life, there is a
 clear demand for mental health support among university students. The
