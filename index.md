@@ -129,7 +129,7 @@ ered a success, otherwise it is a fail.
 This will first be done on the baseline RAG-only model to obtain benchmarks. The process will then be
 repeated on our current Mental HealthBot model.
 </details>
-## Results and Conclusion
+# Results and Conclusion
 ![This is a bar chart of our MentalHealthBot performance against our baseline model performance](baseline_bot_comparison.png)
 
 Our Mental HealthBot model performed better than our baseline model across all success criteria. Surprisingly enough, even though
@@ -173,5 +173,26 @@ always just a conversation away.
 If you would like to try out our chatbot, here's a link to our [github repo!](https://github.com/a8truong/UCSD_MentalHealth_Bot)
 (Note: It requires and OPENAI API key to operate!)
 
+# References
+
+Casu, M., S. Triscari, S. Battiato, L. Guarnera, and P. Caponnetto. 2024.  
+“AI Chatbots for Mental Health: A Scoping Review of Effectiveness, Feasibility, and Applications.”  
+*Applied Sciences* 14(13), p. 5889. [Available here](<insert-link-here>).
+
+He, Y., L. Yang, X. Zhu, B. Wu, S. Zhang, C. Qian, and T. Tian. 2022.  
+“Mental Health Chatbot for Young Adults With Depressive Symptoms During the COVID-19 Pandemic:  
+Single-Blind, Three-Arm Randomized Controlled Trial.”  
+*J Med Internet Res* 24(11), p. e40719. [Available here](<insert-link-here>).
+
+Neupane, Subash, Elias Hossain, Jason Keith, Himanshu Tripathi, Farbod Ghiasi,  
+Noorbakhsh Amiri Golilarz, Amin Amirlatifi, Sudip Mittal, and Shahram Rahimi. 2024.  
+“From Questions to Insightful Answers: Building an Informed Chatbot for University Resources.”  
+[Available here](<insert-link-here>).
+
+Vereschagin, M., A. Wang, C. Richardson, H. Xie, R. Munthali, K. Hudec, C. Leung,  
+K. Wojcik, L. Munro, P. Halli, R. Kessler, and D. Vigo. 2024.  
+“Effectiveness of the Minder Mobile Mental Health and Substance Use Intervention for University Students:  
+Randomized Controlled Trial.”  
+*J Med Internet Res* 26, p. e54287. [Available here](<insert-link-here>).
 
 
