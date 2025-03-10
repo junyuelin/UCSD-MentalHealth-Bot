@@ -107,7 +107,7 @@ gency service contact information in addition to the national suicide hotline
 curate and correct.
 - Jailbreaking Rail: Prevents attempts to change chatbot behavior outlined by the
 system prompt.
-![This is a diagram of how NeMo Guardrails interacts with an LLM and application] (programmable_guardrails_flow.png)
+![This is a diagram of how NeMo Guardrails interacts with an LLM and application](programmable_guardrails_flow.png)
 
 ## Data Collection
 We consider our model success if it:
