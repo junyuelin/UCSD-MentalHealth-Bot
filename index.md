@@ -131,8 +131,8 @@ prompt 10 times.  <br><br>
 2. If the chatbot response does what is intended for the tested bullet point, it is consid-
 ered a success, otherwise it is a fail.  <br><br>  
 
-3. Calculate the accuracy, false positives, and false negatives.
-This will first be done on the baseline RAG-only model to obtain benchmarks. The process will then be
+3. Calculate the accuracy based on success criteria. <br><br>
+This process will first be done on the baseline RAG-only model to obtain benchmarks. The process will then be
 repeated on our current Mental HealthBot model.  
 </details>
 # Results and Conclusion
