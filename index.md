@@ -63,10 +63,12 @@ are more tailored to UCSD mental health services. When this information is pulle
 that the system may retrieve from later on so that it doesn't have to search through the database again.
 <details>
   <summary>Click on this line for more on the nitty gritty of our RAG pipeline if you care for it!</summary>
+  
   Our RAG pipeline is trained on mental health service-related data collected from PDFs (processed 
   and split into smaller chunks using PyPDFLoader and RecursiveCharacterText
   Splitter from LangChain) and data scraped (using requests and BeautifulSoup) from
   UCSD mental health service-related websites.
+  
   To create a searchable knowledge base, the collected text data is converted into vector rep-
   resentations using OpenAIEmbeddings. These embeddings represent semantic meanings
   that facilitate similarity-based retrieval. The generated embeddings are stored in a FAISS
@@ -115,21 +117,25 @@ We consider our model success if it:
 - resists jailbreaking attempts
 <details>
   <summary>Click this line for more details on how we tested our model!</summary>
+  
 To test these, conduct the following steps on a baseline GPT-3.5 turbo model with RAG implemented:
+  
 1. For each bullet point listed above, test 5 different prompts tailored to that specific
 bullet point. Given the stochastic nature of LLMs, data should be collected for each
 prompt 10 times.
+
 2. If the chatbot response does what is intended for the tested bullet point, it is consid-
 ered a success, otherwise it is a fail.
+
 3. Calculate the accuracy, false positives, and false negatives.
 This will first be done on the baseline RAG-only model to obtain benchmarks. The process will then be
 repeated on our current Mental HealthBot model.
 </details>
 ## Results and Conclusion
-Our Mental HealthBot model performed better than our baseline model across all success criteria!
 ![This is a bar chart of our MentalHealthBot performance against our baseline model performance](baseline_bot_comparison.png)
 
-Surprisingly enough, even though our model had more things (namely guardrails) added on top of the baseline model, it also performed faster overall!
+Our Mental HealthBot model performed better than our baseline model across all success criteria. Surprisingly enough, even though
+our model had more things (namely guardrails) added on top of the baseline model, it also performed faster overall!
 
 **Baseline vs Mental HealthBot Response Time (Seconds)**
 
@@ -137,11 +143,35 @@ Surprisingly enough, even though our model had more things (namely guardrails) a
 |--------------------|----------|------------------|--------------------|
 | Average  | 3.625233 | 2.835641         | 21.78      |
 
-Additionally, implementing a cache decreased retrieval time by 97.47% which significantly sped up our chatbot:
 
+Additionally, we can see from the table below that implementing a cache decreased retrieval time by 97.47%, significantly speeding up response times:
 **RAG vs Cache Retrieval Time (Seconds)**
 |   Metric |    RAG |   Cache |   Speed Increase (%) |
 |:--------|-------:|--------:|---------------------:|
 | Average| 2.6831 |   0.068 |                97.47 |
+
+The development of our UCSD Mental HealthBot was able to successfully address critical
+gaps in student access to mental health resources on campus. A combination of Retrieval-
+Augmented Generation (RAG) and NeMo Guardrails allows the chatbot to provide accu-
+rate and empathetic responses tailored specifically to UCSD students. Our chatbot with
+guardrails implemented was able to surpass the baseline model without guardrails in all
+the following areas: emotional validation, accurate information retrieval, crisis detection,
+and jailbreak resistance.
+
+Looking ahead, there are several avenues for further development. Expanding the chatbot’s
+knowledge base to include additional UCSD services—such as academic advising, career
+counseling, and social event recommendations—would enhance its utility beyond mental
+health support. Additionally, improving our chat history to integrate a vector database for
+semantic search could improve the chatbot’s ability to understand and respond to complex
+queries with even greater accuracy.
+
+Overall, our chatbot represents a meaningful step toward making mental health resources
+more accessible and approachable for UCSD students. By continuing to refine and expand
+its capabilities, we aim to further enhance student well-being and ensure that support is
+always just a conversation away.
+
+If you would like to try out our chatbot, here's a link to our [github repo!](https://github.com/a8truong/UCSD_MentalHealth_Bot)
+(Note: It requires and OPENAI API key to operate!)
+
 
 
