@@ -158,8 +158,8 @@ Additionally, we can see from the table below that implementing a cache decrease
 
 The development of our UCSD Mental HealthBot was able to successfully address critical
 gaps in student access to mental health resources on campus. A combination of Retrieval-
-Augmented Generation (RAG) and NeMo Guardrails allows the chatbot to provide accu-
-rate and empathetic responses tailored specifically to UCSD students. Our chatbot with
+Augmented Generation (RAG) and NeMo Guardrails allows the chatbot to provide accurate and 
+empathetic responses tailored specifically to UCSD students. Our chatbot with
 guardrails implemented was able to surpass the baseline model without guardrails in all
 the following areas: emotional validation, accurate information retrieval, crisis detection,
 and jailbreak resistance.
@@ -176,7 +176,7 @@ more accessible and approachable for UCSD students. By continuing to refine and 
 its capabilities, we aim to further enhance student well-being and ensure that support is
 always just a conversation away.
 
-If you would like to try out our chatbot, here's a link to our [github repo!](https://github.com/a8truong/UCSD_MentalHealth_Bot)
+If you would like to try out our chatbot, here's a link to our [github repo](https://github.com/a8truong/UCSD_MentalHealth_Bot)!
 (Note: It requires and OPENAI API key to operate!)
 
 # References
