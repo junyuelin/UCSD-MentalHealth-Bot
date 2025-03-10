@@ -67,11 +67,11 @@ are more tailored to UCSD mental health services. When this information is pulle
 that the system may retrieve from later on so that it doesn't have to search through the database again.
 <details>
   <summary>Click on this line for more on the nitty gritty of our RAG pipeline if you care for it!</summary>
-  
+  <br>
   Our RAG pipeline is trained on mental health service-related data collected from PDFs (processed 
   and split into smaller chunks using PyPDFLoader and RecursiveCharacterText
   Splitter from LangChain) and data scraped (using requests and BeautifulSoup) from
-  UCSD mental health service-related websites.
+  UCSD mental health service-related websites. <br><br>
   
   To create a searchable knowledge base, the collected text data is converted into vector rep-
   resentations using OpenAIEmbeddings. These embeddings represent semantic meanings
@@ -121,19 +121,19 @@ We consider our model success if it:
 - resists jailbreaking attempts
 <details>
   <summary>Click this line for more details on how we tested our model!</summary>
-  
-To test these, conduct the following steps on a baseline GPT-3.5 turbo model with RAG implemented:
+<br>  
+To test these, conduct the following steps on a baseline GPT-3.5 turbo model with RAG implemented: <br><br>  
   
 1. For each bullet point listed above, test 5 different prompts tailored to that specific
 bullet point. Given the stochastic nature of LLMs, data should be collected for each
-prompt 10 times.
+prompt 10 times.  <br><br>  
 
 2. If the chatbot response does what is intended for the tested bullet point, it is consid-
-ered a success, otherwise it is a fail.
+ered a success, otherwise it is a fail.  <br><br>  
 
 3. Calculate the accuracy, false positives, and false negatives.
 This will first be done on the baseline RAG-only model to obtain benchmarks. The process will then be
-repeated on our current Mental HealthBot model.
+repeated on our current Mental HealthBot model.  
 </details>
 # Results and Conclusion
 ![This is a bar chart of our MentalHealthBot performance against our baseline model performance](baseline_bot_comparison.png)
