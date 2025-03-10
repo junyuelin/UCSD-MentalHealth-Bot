@@ -17,10 +17,10 @@ Generation (RAG). Additionally, guardrails are implemented to prevent hal-
 lucinations and detect emergency crisis behavior among users.
 
 # Introduction
-Mental health is a growing concern among university students balancing academic, so-
-cial, and personal challenges. While mental health-related GenAI applications have gained
-traction, they are largely catered to the general population and are susceptible to halluci-
-nations. They lack any knowledge on campus-specific information relevant to the average
+Mental health is a growing concern among university students balancing academic, social, 
+and personal challenges. While mental health-related GenAI applications have gained
+traction, they are largely catered to the general population and are susceptible to hallucinations. 
+They lack any knowledge on campus-specific information relevant to the average
 UCSD student. As a result, this project aims to develop a chatbot tailored to UCSD students
 that can direct them to the numerous mental health services on campus when needed.
 A variety of AI mental health chatbots are shown to have improved mental health through
@@ -34,15 +34,13 @@ efficacy and feasibility of 15 different studies on AI mental health chatbots co
 tailoring chatbot interventions to specific populations can enhance their efficacy (Casu et al.
 2024).
 Outside the mental health space, a study on a chatbot trained on campus-specific resources
-at Mississippi State University highlights the potential AI-based chat systems have on facil-
-itating access to university resources (Neupane et al. 2024).
-Willo, the current AI wellness based app tailored to UCSD students, provides lists of rel-
-evant campus resources based on user-selected data. However, it lacks any other form of
-user interaction and in-app mental health support. Our chatbot addresses this gap by incor-
-porating a mental health conscious persona that can support users in non-crisis situations
-while also promoting on-campus mental-health resources.
-To test the efficacy of our chatbot, we compare its responses with a control GPT-3.5 turbo
-model on the following criteria:
+at Mississippi State University highlights the potential AI-based chat systems have on facilitating 
+access to university resources (Neupane et al. 2024). Willo, the current AI wellness based app tailored 
+to UCSD students, provides lists of relevant campus resources based on user-selected data. However, 
+it lacks any other form of user interaction and in-app mental health support. Our chatbot addresses this
+gap by incorporating a mental health conscious persona that can support users in non-crisis situations
+while also promoting on-campus mental-health resources. To test the efficacy of our chatbot, we compare 
+its responses with a control GPT-3.5 turbo model on the following criteria:
 - Whether or not responses to emotionally charged user prompts normalize and affirm
 their feelings
 - Whether or not responses accurately provide information to UCSD mental health
