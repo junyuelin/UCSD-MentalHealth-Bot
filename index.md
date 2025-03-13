@@ -176,8 +176,8 @@ more accessible and approachable for UCSD students. By continuing to refine and 
 its capabilities, we aim to further enhance student well-being and ensure that support is
 always just a conversation away.
 
-If you would like to try out our chatbot, here's a link to our [github repo](https://github.com/a8truong/UCSD_MentalHealth_Bot)!
-(Note: It requires and OPENAI API key to operate!)
+**If you would like to try out our chatbot, here's a link to our [github repo](https://github.com/a8truong/UCSD_MentalHealth_Bot)!
+(Note: It requires and OPENAI API key to operate!)**
 
 # References
 
