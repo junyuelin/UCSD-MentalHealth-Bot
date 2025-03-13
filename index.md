@@ -13,8 +13,8 @@ campus-related information. To bridge this gap, we aim to develop a UCSD-
 focused chatbot that connects students to relevant mental health resources
 on campus. The large language model (LLM) our application uses is fed
 UCSD-specific information through a framework called Retrieval-Augmented
-Generation (RAG). Additionally, guardrails are implemented to prevent hal-
-lucinations and detect emergency crisis behavior among users.
+Generation (RAG). Additionally, guardrails are implemented to prevent 
+hallucinations and detect emergency crisis behavior among users.
 
 # Introduction
 
